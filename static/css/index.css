@@ -1,0 +1,32 @@
+.header-bg {
+    background-image: url('../images/bangkok-banner.jpeg');
+    background-size: cover; /* Ensure the image covers the header */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.header-bg p {
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.header-bg-opacity {
+    background-color: rgba(0, 0, 0, 0.3); /* Black with 50% opacity */
+    padding: 0.5rem; /* Optional: Adds padding inside the header */
+}
+
+
+.presenter {
+    text-align: center;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.presenter-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; /* Optional: Makes the images circular */
+}
