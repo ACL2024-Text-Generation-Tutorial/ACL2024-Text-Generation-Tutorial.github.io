@@ -6,6 +6,7 @@
     <title>ACL 2024 Tutorial on Automatic and Human-AI Interactive Text Generation</title>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="static/css/index.css">
+    <script src="https://kit.fontawesome.com/c3b36ffc0c.js" crossorigin="anonymous"></script>
 </head>
 <body class="avenir">
     <section class="header-bg mb3">
@@ -14,31 +15,135 @@
             <p class="mt3 mb0 fw6" style="font-size: 2.5em;">
                 Automatic and Human-AI Interactive Text Generation
             </p>
-            <p class="pb4 f3 fw6">
+            <p class="pb3 f3 fw6">
                 Sunday, August 11th 09:00 - 12:30, at Lotus 5-7 (Level 22)
             </p>
         </header>
     </section>
-    <section class="mw8 center">
+    <section class="mw8 center mv4">
         <div id="presenters" class="flex flex-wrap justify-center">
             <div class="presenter">
                 <img src="static/images/authors/yao.jpg" class="presenter-img">
-                <p class="mt1">Yao Dou</p>
+                <p class="mv1 f4"><a href="https://yao-dou.github.io/" class="link blue hover-orange" target="_blank">Yao Dou</a><sup>*1</sup></p>
             </div>
             <div class="presenter">
                 <img src="static/images/authors/philippe.jpeg" class="presenter-img">
-                <p class="mt1">Philippe Laban</p>
-            </div>
-            <div class="presenter">
-                <img src="static/images/authors/wei.png" class="presenter-img">
-                <p class="mt1">Wei Xu</p>
+                <p class="mv1 f4"><a href="https://tingofurro.github.io/" class="link blue hover-orange" target="_blank">Philippe Laban</a><sup>*2</sup></p>
             </div>
             <div class="presenter">
                 <img src="static/images/authors/claire.jpg" class="presenter-img">
-                <p class="mt1">Claire Gardent</p>
+                <p class="mv1 f4"><a href="https://members.loria.fr/CGardent/claire.html" class="link blue hover-orange" target="_blank">Claire Gardent</a><sup>3</sup></p>
             </div>
+            <div class="presenter">
+                <img src="static/images/authors/wei.png" class="presenter-img">
+                <p class="mv1 f4"><a href="https://cocoxu.github.io/" class="link blue hover-orange" target="_blank">Wei Xu</a><sup>1</sup></p>
+            </div>
+        </div>
+        <div id="organization" class="tc">
+            <p class="f5 mv3"><sup>1</sup>Georgia Institute of Technology, <sup>2</sup>Salesforce AI, <sup>3</sup>CNRS/LORIA</p>
+            <p class="f5 mt2"><sup>*</sup>Equal Contribution</p>
+        </div>
+        <div class="tc f4 mt4">
+            We will take Q&A at <a class="link blue hover-orange" target="_blank">TO-DO</a>
+        </div>
+        <hr class="styled-hr">
+    </section>
+    <section class="mw7 center mt4">
+        <p class="f2-5 fw5 tc">About this Tutorial</p>
+        <p class="f4-5 tj lh-copy">
+            In this tutorial, we focus on text-to-text generation, a class of natural language generation (NLG) tasks, that takes a piece of text as input and then generates a revision that is 
+            improved according to some specific criteria (e.g., readability or linguistic styles).
+            This includes many useful applications, such as text simplification, paraphrase generation, style transfer, etc, which
+            are more constrained in terms of semantic consistency and targeted language styles, compared to text summarization and 
+            open-ended text completion (e.g., story).
+            These tasks are interesting from a technical standpoint, as they require complex 
+            combinations of lexical and syntactical transformations, stylistic control, and adherence to factual knowledge, 
+            -- all at once. 
+        </p>
+        <p class="f4-5 tj lh-copy">
+            With a special focus on text simplification and revision, this tutorial aims to provide an overview of the state-of-the-art NLG research 
+            from four major aspects --  Evaluation, Model Architecture, Modeling Techniques, Human-AI Collaboration, -- 
+            and to discuss a few significant and recent advances: 
+            (1) the development of new learnable metric and fine-grained human evaluation framework;
+            (2) the shift from fine-tuning to prompting with large language models; 
+            (3) the use of non-autoregressive and different decoding techniques; 
+            (4) the rise of HCI+NLP+Accessibility interdisciplinary research to create real-world writing assistant systems.
+        </p>
+        <hr class="styled-hr">
+    </section>
+    <section class="mw7 center mt4">
+        <p class="f2-5 fw5 tc">Tutorial Schedule</p>
+        <p class="f5">The tutorial will be held on Aug 11th (time are based on UTC+7 = Bangkok local time):</p>
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th class="f5 fw6">Time</th>
+                    <th class="f5 fw6">Section</th>
+                    <th class="f5 fw6">Presenter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="f5">9:00 - 9:15</td>
+                    <td class="f5">Introduction</td>
+                    <td class="f5">Wei</td>
+                </tr>
+                <tr>
+                    <td class="f5">9:15 - 9:55</td>
+                    <td class="f5">Section 1: Evaluation of LLM-generated Text</td>
+                    <td class="f5">Yao</td>
+                </tr>
+                <tr>
+                    <td class="f5">9:55 - 10:30</td>
+                    <td class="f5">Section 2: Models - (Text Simplification and Text Rewriting)</td>
+                    <td class="f5">Claire</td>
+                </tr>
+                <tr>
+                    <td class="f5">10:30 - 11:00</td>
+                    <td class="f5">Break</td>
+                    <td class="f5">-</td>
+                </tr>
+                <tr>
+                    <td class="f5">11:00 - 11:40</td>
+                    <td class="f5">Section 3: Modeling Perspectives - (decoding,distillation, and diffusion)</td>
+                    <td class="f5">Wei</td>
+                </tr>
+                <tr>
+                    <td class="f5">11:40 - 12:20</td>
+                    <td class="f5">Section 4: Human-Centered NLP</td>
+                    <td class="f5">Philippe</td>
+                </tr>
+                <tr>
+                    <td class="f5">12:20 - 12:30</td>
+                    <td class="f5">Q&A</td>
+                    <td class="f5">All</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="i f5">Slides will be uploaded before the tutorial and are subject to changes.</p>
+        <hr class="styled-hr">
+    </section>
+    <section class="mw7 center mv4">
+        <p class="f2-5 fw5 tc">BibTeX</p>
+        <div class="bibtex-container">
+            <i class="fa-regular fa-copy copy-icon dim" onclick="copyBibTeX()"></i>
+            <pre class="bibtex-entry" id="bibtex-entry">@article{dou2023automatic,
+    title={Automatic and Human-AI Interactive Text Generation},
+    author={Dou, Yao and Laban, Philippe and Gardent, Claire and Xu, Wei},
+    journal={arXiv preprint arXiv:2310.03878},
+    year={2023}
+}</pre>
         </div>
     </section>
 
+<script>
+        function copyBibTeX() {
+            const bibtexText = document.getElementById('bibtex-entry').innerText;
+            navigator.clipboard.writeText(bibtexText).then(() => {
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+    </script>
 </body>
 </html>
